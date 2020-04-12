@@ -1,0 +1,261 @@
+\documentclass{FR16} 
+
+\begin{document}
+
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Scope}
+
+\subsection{Overview}
+The first phase in this automation shall be installation of Data Acquisition System (DAQ). The DAQ system is chosen as the first phase as earlier completion of this phase shall also assist the users in their work. 
+
+\subsection{Project goal and objectives}
+
+\subsubsection{Hardware front}
+The objective of this phase is to design and install a DAQ system which can  acquire acceleration and temperature data from nine different sensors. Very accurate data needs to be acquired (upto six decimal acccuracy), as these sensors are  utilized in the navigation systems. 
+
+\subsubsection{Software front}
+A software shall also be developed which shall have three modes of operation:
+\begin{enumerate}
+    \item \textbf{Mode 1:} Till the time, the complete project gets implemented. A click of a button shall obtain data from all the 9 sensors and put them in the desired format. Also post data acquisition software shall also provided to ease the users work which involves computing and final reports.
+    \item \textbf{Mode 2:} However, our focus would be on Mode 2, where all the 80 to 100 steps of acquisition protocol shall be automated.
+    \item \textbf{Mode 3:} Additional functionality of manual mode shall also be provided where the user can press the buttons and note down the readings from all the nine sensors. This may also be utilized to verify the automated data. .
+\end{enumerate}
+
+
+\subsection{Feasibility}
+To meet the above requirements combination of software and hardware needs to be implemented. Thus, a embedded system shall be designed in a master-slave architecture to control the devices and acquire data.
+
+The designed hardware system shall be interfaced with the computer. Thus, upon command from the computer, the acquisition of the acceleration and temperature data takes place sequentially from all the sensors.  
+
+
+
+
+
+
+
+
+
+
+\newpage
+\section{Plan for implementation}
+From the technical standpoint, this project shall be executed in the following manner and may be considered as a four-fold path:
+\subsection{Brief enumeration of the steps}
+
+\begin{enumerate}
+     \item \underline{\textbf{Computer as the Master:}} A 32 bit computer (8GB RAM, good processing power ) shall be required and shall act as the master  for all the acquisition. The constraint of 32 bit is placed as it has been verified that the Treatg software runs only in 32 bit windows 7 configuration.
+    \item \underline{\textbf{DAQ System:}}A embedded system capable of Data Acquisition System  shall be designed. Work shall proceed along the following directions.
+        \begin{itemize}
+            \item \textbf{ Technical aspect of Design:} This embedded system shall be custom designed to suit the need. Design aspects like required  processing speed, Memory, Storage, Energy consumption needs to assessed that fulfills the requirements. Care also should be taken to eliminate ground loops, and digital noise. Additional GPIO, Timers, serial ports and Analog to digital converters shall also be made available. The system shall have hardware awareness and communicates with its peripherals and computer using different serial communication protocols like UART, SPI etc. 
+            
+            \item \textbf{ Aesthetic aspect of Design:}During design, not only technical part but aesthetic part also needs to be taken into account. Care shall be taken  that no wires shall be hanging from the system. All the wires come to the system through connectors, the input to the DAQ system shall be the opposite connector corresponding to the accelerometer. Furthermore, to make sure that the length of the wire from the accelerometer to the DAQ system suffices, nine straight connector wires also shall be provided.
+        \end{itemize}
+    \item \underline{\textbf{PCB population and assembly:}}Once the design of the DAQ system is finalized,  PCB is acquired from the  manufacturer and populated.
+    \item \underline{\textbf{Prototyping:}} The proto-typing forms one of the critical steps for DAQ system. A prototype PCB shall be tested in-situ and any changes or additional features that the user requested shall be incorporated in the final device.
+    
+    \item \underline{\textbf{Final PCB design:}} Thus,After incorporating all the necessary changes requested by the user, the final DAQ system shall be installed. For the final PCB,  burn-in test shall also be performed, where ICs are exerted to immense thermal stress.
+    
+    \end{enumerate}  
+
+   \subsection{Validation}
+The DAQ can be validated by the user by acquiring the data from all the nine sensors. The data obtained in their desired format validates this phase of work.
+
+
+\newpage
+\section{Facilities, equipment and other Resources required}
+
+
+
+
+\subsection{Data Infrastructure and Software needs}
+
+
+
+\subsection{Deliverables}
+
+\begin{itemize}
+    \item 32 bit computer either assembled for increasing performance or from a company
+    \item prototyping
+    \item PCB making charges
+    \item DAQ system
+    \item windows 7 software
+    \item Origin software
+    \item nine straight wire connectors suitable for accelerometer wire extension
+    \item  USB extenders 2
+    \item Ethernet switch
+    \item Lan cables
+    \item Matlab sooftware
+\end{itemize}
+
+\section{Project Budget}
+ \subsection{Cost-cutting}
+Many other alternative plans have been proposed. This route and budget is proposed after a series of discussions with RCI incharges regarding their technical requirement for a turn-key solution.
+
+\subsection{Intellectual Merit}
+We offer a high-end, high-tech simulation, automation and precision  manufacturing solutions. Our group comprises of accomplished professionals from a variety of backgrounds, including electrical, mechanical,  underground instrumentation and measurement. We offer solutions to improve the quality, durability, and reliability of the final products, processes or tasks. 
+
+\newpage
+\subsection{Budget for a high end PC }
+As mentioned earlier, computer with good processing is a must for successful completion of the project. To this end, we suggest a high end system. An high end assembled PC balanced both in terms of its performance and cost is given below.
+\begin{center}
+\begin{tabular}[h]{||c ||c|| p{6 cm}|| c|| }
+\arrayrulecolor{Azzurro}
+\hline
+\hline
+{\bfseries S.No} & {\bfseries Item Name}& {\bfseries Item Description} & {\bfseries Cost (Rs)} \\
+\hline
+\hline
+1 & Processor & Intel i7-9700k & 36,000\\
+\hline
+\hline
+2 &Motherboard & Msi MPG Z390M Gaming Edge AC  (MICRO ATX) & 16,500  \\
+\hline
+\hline
+3 &RAM & G.Skill Ripjaws or Corsair Vengence DDR4 C19L 3600mhz 8GB*2=16Gb & 8,500\\ 
+\hline 
+\hline
+4 &Internal HDD & Seagate Barracuda 2TB & 4500\\ 
+\hline
+\hline
+5 &Solid State Drive & 1Samsung 970 Evo Plus M.2 Nvme 500GB  & 10000\\
+\hline
+\hline
+6 &DVD Drive & LG or Asus DVD-RW/16x & 1000\\
+\hline
+\hline
+7 &Power Supply Unit (SMPS) &  Corsair TX 650M (GOLD Certified) & 8000\\
+\hline
+\hline
+8 &Cabinet &  Corsair TX 650M (GOLD Certified) & 8000\\
+\hline
+\hline
+9 &Power Supply Unit (SMPS) &  Corsair TX 650M (GOLD Certified)  & 8000\\
+\hline
+\hline
+10 &Cabinet &  CoolerMaster Mid Tower ATX  & 8000\\
+\hline
+\hline
+11 &Monitor &  Dell 24inch IPS LCD SE2419H  & 11.000\\
+\hline
+\hline
+12 &Keyboard and Mouse &  Dell Wireless WK117  & 1300\\
+\hline
+\hline
+ & Total & & 1,04,800
+ 
+ \end{tabular}
+\end{center}
+
+
+
+
+
+
+\newpage
+\subsection{Costing during Product Development}
+\begin{center}
+\begin{tabular}{||p{3 cm} ||p{4 cm}|| p{6 cm}|| c|| }
+\arrayrulecolor{Azzurro}
+\hline
+\hline
+
+{\bfseries Phase/Item name } & {\bfseries Operation}& {\bfseries Description} & {\bfseries Cost (Rs)} \\
+\hline
+\hline
+Design phase and Hardware finalization& Proteus as hardware simulation environment and Keil as
+software design environment &  Aspects like required  processing speed, Memory, Storage, Energy consumption considered. GPIO, Timers, serial ports and Analog to digital converters shall also be made available. communication protocols like UART, SPI shall be established &100\\
+\hline
+\hline
+Hardware procurement & & &  \\
+\hline
+\hline
+PCB designing & utilization Proteus Schematic Capture and PCB Layout modules  & Licensing of Proteus Enterprise Edition costed us \$6,592&\\ 
+\hline 
+\hline
+PCB Manufacturing for prototyping & Shall be procured from a local vendor & Licensing of Proteus Enterprise Edition costed us \$6,592.& --\\
+\hline 
+\hline
+In-burn testing & Shall be procured from a local vendor & Licensing of Proteus Enterprise Edition costed us \$6,592.& --\\
+\hline 
+\hline
+Finalized PCB installation & Shall be procured from a local vendor & Licensing of Proteus Enterprise Edition costed us \$6,592.& --\\
+\hline 
+\hline
+PCB population &Internal HDD & Seagate Barracuda 2TB & 4500\\ 
+\hline
+\hline
+Casing &Solid State Drive & 1Samsung 970 Evo Plus M.2 Nvme 500GB  & 10000\\
+\hline
+\hline
+Nine extender's for accelerometer &DVD Drive & LG or Asus DVD-RW/16x & 1000\\
+\hline
+\hline
+Two USB extenders &  Corsair TX 650M (GOLD Certified) & 8000 &\\
+\hline
+\hline
+Windows 7/8 software &Cabinet &  Corsair TX 650M (GOLD Certified) & 8000\\
+\hline
+\hline
+& Total & & 1,04,800
+ 
+ \end{tabular}
+\end{center}
+Ideally, we should be able to complete earlier to this. However, PCB manufacturing delays or component procurement delays may add up to this.
+
+
+\subsection{Human Resources}
+\begin{center}
+\begin{tabular}{||p{3 cm} ||p{4 cm}|| p{6 cm}|| c|| }
+\arrayrulecolor{Azzurro}
+\hline
+\hline
+
+{\bfseries Phase/Item name } & {\bfseries Operation}& {\bfseries Description} & {\bfseries Cost (Rs)} \\
+\hline
+\hline
+
+Casing &Solid State Drive & 1Samsung 970 Evo Plus M.2 Nvme 500GB  & 10000\\
+\hline
+\hline
+Nine extender's for accelerometer &DVD Drive & LG or Asus DVD-RW/16x & 1000\\
+\hline
+\hline
+Human resources & \specialcell{Eight months duration \\$8\times (25,000 \times 2) =4,00,000$\\ (two Engineers)\\8 \times 10,000 = 80,000(PhD)}&  A Doctorate Professional shall be in-charge and overlooking the entire project. Two electrical engineers shall implement this. & 8000\\
+\hline
+\hline
+\end{tabular}
+\end{center}
+
+
+
+\newpage
+
+
+
+\section{Execution- precise position for Accelerometer calibration }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+\end{document}
