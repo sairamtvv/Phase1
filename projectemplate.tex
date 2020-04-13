@@ -67,12 +67,12 @@ The DAQ can be validated by the user by acquiring the data from all the nine sen
 
 \newpage
 \section{Facilities, equipment and other Resources required}
-
+\textcolor{red}{This  section is yet to be filled properly}
 
 
 
 \subsection{Data Infrastructure and Software needs}
-
+\textcolor{red}{This  section is yet to be filled properly}
 
 
 \subsection{Deliverables}
@@ -80,16 +80,13 @@ The DAQ can be validated by the user by acquiring the data from all the nine sen
 \begin{itemize}
     \item 32 bit computer either assembled for increasing performance or from a company
     \item prototyping
-    \item PCB making charges
     \item DAQ system
     \item windows 7 software
-    \item Origin software
-    \item nine straight wire connectors suitable for accelerometer wire extension
-    \item  USB extenders 2
+     \item nine straight wire connectors suitable for accelerometer wire extension
+    \item Two USB extenders 
     \item Ethernet switch
-    \item Lan cables
-    \item Matlab sooftware
-\end{itemize}
+    \item Networking cables
+ \end{itemize}
 
 \section{Project Budget}
  \subsection{Cost-cutting}
@@ -156,14 +153,14 @@ As mentioned earlier, computer with good processing is a must for successful com
 
 
 \newpage
-\subsection{Costing during Product Development}
+\subsection{Costing for Product Development}
 \begin{center}
 \begin{tabular}{||p{3 cm} ||p{4 cm}|| p{6 cm}|| c|| }
 \arrayrulecolor{Azzurro}
 \hline
 \hline
 
-{\bfseries Phase/Item name } & {\bfseries Operation}& {\bfseries Description} & {\bfseries Cost (Rs)} \\
+{\bfseries Phase/Item name } & {\bfseries Operation}& {\bfseries Description} & {\bfseries Cost INR} \\
 \hline
 \hline
 Design phase and Hardware finalization& Proteus as hardware simulation environment and Keil as
@@ -176,77 +173,115 @@ Hardware procurement & & &  \\
 PCB designing & utilization Proteus Schematic Capture and PCB Layout modules  & Licensing of Proteus Enterprise Edition costed us \$6,592&\\ 
 \hline 
 \hline
-PCB Manufacturing for prototyping & Shall be procured from a local vendor & Licensing of Proteus Enterprise Edition costed us \$6,592.& --\\
+PCB Manufacturing for prototyping & Shall be procured from a local vendor which includes both manufacturing and population charges & This shall be utilized to get approval from the user& --\\
 \hline 
 \hline
-In-burn testing & Shall be procured from a local vendor & Licensing of Proteus Enterprise Edition costed us \$6,592.& --\\
+PCB Manufacturing for final PCB  & Shall be procured from a class A manufacturer & costing includes both manufacturing and population charges&\\
 \hline 
 \hline
-Finalized PCB installation & Shall be procured from a local vendor & Licensing of Proteus Enterprise Edition costed us \$6,592.& --\\
+In-burn testing & stress testing & Checking any defects during PCB manufacturing or population& \\
 \hline 
 \hline
-PCB population &Internal HDD & Seagate Barracuda 2TB & 4500\\ 
+Casing & - & Should house on the surface 9 D-pin connectors and 20 switches. should have electric casing, USB and LAN port & 10000\\
 \hline
 \hline
-Casing &Solid State Drive & 1Samsung 970 Evo Plus M.2 Nvme 500GB  & 10000\\
+software integration with hardware &Keil as
+software design environment & This involves coding for three modes of operation discussed above  & 10000\\
 \hline
 \hline
-Nine extender's for accelerometer &DVD Drive & LG or Asus DVD-RW/16x & 1000\\
-\hline
-\hline
-Two USB extenders &  Corsair TX 650M (GOLD Certified) & 8000 &\\
-\hline
-\hline
-Windows 7/8 software &Cabinet &  Corsair TX 650M (GOLD Certified) & 8000\\
-\hline
-\hline
-& Total & & 1,04,800
+& Total & & Dont know
  
  \end{tabular}
 \end{center}
 Ideally, we should be able to complete earlier to this. However, PCB manufacturing delays or component procurement delays may add up to this.
 
 
-\subsection{Human Resources}
+
+\subsection{Accessories}
 \begin{center}
 \begin{tabular}{||p{3 cm} ||p{4 cm}|| p{6 cm}|| c|| }
 \arrayrulecolor{Azzurro}
 \hline
 \hline
-
-{\bfseries Phase/Item name } & {\bfseries Operation}& {\bfseries Description} & {\bfseries Cost (Rs)} \\
+{\bfseries S.No} & {\bfseries Item Name}& {\bfseries Item Description} & {\bfseries Cost (Rs)} \\
 \hline
 \hline
-
-Casing &Solid State Drive & 1Samsung 970 Evo Plus M.2 Nvme 500GB  & 10000\\
+Nine extender's for accelerometer &straight cable D-pin connectors & Required for aesthetic connections & 1000\\
 \hline
 \hline
-Nine extender's for accelerometer &DVD Drive & LG or Asus DVD-RW/16x & 1000\\
+Two mini USB extenders & Male to female mini USB connectors& Extend the communication from the embedded system to the computer & &\\
 \hline
 \hline
-Human resources & \specialcell{Eight months duration \\$8\times (25,000 \times 2) =4,00,000$\\ (two Engineers)\\8 \times 10,000 = 80,000(PhD)}&  A Doctorate Professional shall be in-charge and overlooking the entire project. Two electrical engineers shall implement this. & 8000\\
+Windows 7/8 software &Cabinet &  Corsair TX 650M (GOLD Certified) & 8000\\
 \hline
 \hline
-\end{tabular}
+Ethernet switch & Required for networking & &\\
+\hline
+\hline
+Networking Cables & 2 to 3 cables & Required for networking&\\
+\hline
+\hline
+& Total & & Dont know
+ 
+ \end{tabular}
 \end{center}
 
 
 
 \newpage
+\subsection{Human Resources}
+A Doctorate holding professional shall be made in-charge for this entire project. He shall be overlooking the entire project and guides the engineers to implement it successfully. He shall be on-looking three other projects, which happens to be 20,000. 
+\begin{center}
+\begin{tabular}{||p{2 cm} ||p{3 cm}||p{1.5 cm}|| p{1.5 cm}|| p{2 cm}||p{3 cm}|| }
+\arrayrulecolor{Azzurro}
+\hline
+\hline
+
+{\bfseries Human Resource } & {\bfseries Role} & {\bfseries personnel}&{\bfseries Man Month}& {\bfseries Duration (months)} & {\bfseries Cost INR} \\
+\hline
+\hline
+ Doctorate holding Professional  & In-charge and overlooks the entire project &1 & 20,000 & 8 months & 8 months$\times$ 20,000=1,60,000\\
+\hline
+\hline
+Electrical engineer & Design and optimization of the hardware, one looks after electronics and the other looks after communication  &1 & 45,000 & 8 months & 8 months $\times$ 45,000=3,60,000\\
+\hline
+\hline
+Electrical engineer &Programming for the interfacing, low level interfacing using C and high level integration with python  &1 & 45,000 & 8 months & 8 months $\times$ 45,000=3,60,00\\
+\hline
+\hline
+& & & Total & & Dont know
+\end{tabular}
+\end{center}
 
 
+\subsection{Total Budget}
+\begin{center}
+\begin{tabular}{||p{3 cm} ||p{4 cm}|| p{6 cm}|| c|| }
+\arrayrulecolor{Azzurro}
+\hline
+\hline
+{\bfseries S.No} & {\bfseries Budget}&  {\bfseries Cost INR} \\
+\hline
+\hline
 
-\section{Execution- precise position for Accelerometer calibration }
+1& High end PC& 1,04,800\\
+\hline
+\hline
+2& Development of a embedded system & XXXXX\\
+\hline
+\hline
+3&Accessories &YYYYYYY\\
+\hline
+\hline
+4&Human Resources & ZZZZZZZ\\
+\hline
+\hline
+& Total & Dont know
+\end{tabular}
+\end{center}
 
 
-
-
-
-
-
-
-
-
+\subsection{gantt-plot (Timelines plot)}
 
 
 
